@@ -1,114 +1,410 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Kartik Mobile Tricks</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>EK Tournament</title>
 
 <style>
+*{
+  box-sizing:border-box;
+}
+
 body{
-    font-family: Arial;
-    margin:0;
-    background:#f2f2f2;
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#090a0f;
+  color:white;
 }
 
 header{
-    background:#111;
-    color:white;
-    padding:25px;
-    text-align:center;
+  background:linear-gradient(135deg,#ff1717,#a90000);
+  text-align:center;
+  padding:35px 15px;
 }
 
 header h1{
-    color:#00ff99;
+  margin:0;
+  font-size:38px;
+}
+
+header p{
+  font-size:20px;
+  margin:12px 0 0;
+}
+
+.container{
+  padding:20px;
+  max-width:700px;
+  margin:auto;
+}
+
+.title{
+  font-size:28px;
+  margin:10px 0 18px;
 }
 
 .card{
-    background:white;
-    margin:20px;
-    padding:20px;
-    border-radius:15px;
-    box-shadow:0 0 10px #ccc;
+  background:#171722;
+  border:1px solid #292936;
+  border-radius:18px;
+  padding:20px;
+  margin-bottom:20px;
+  box-shadow:0 8px 20px rgba(0,0,0,.25);
 }
 
-h2{
-    color:#008cff;
+.card h2{
+  color:#ff4b35;
+  margin-top:0;
+}
+
+.info{
+  display:flex;
+  justify-content:space-between;
+  margin:12px 0;
+  font-size:17px;
 }
 
 button{
-    background:#00a86b;
-    color:white;
-    border:none;
-    padding:12px 20px;
-    border-radius:20px;
+  width:100%;
+  padding:15px;
+  border:0;
+  border-radius:12px;
+  background:#ff3025;
+  color:white;
+  font-size:18px;
+  font-weight:bold;
+  margin-top:12px;
+  cursor:pointer;
+}
+
+button:hover{
+  opacity:.9;
+}
+
+input{
+  width:100%;
+  padding:14px;
+  margin:8px 0 14px;
+  border-radius:10px;
+  border:1px solid #444;
+  background:#0e0e15;
+  color:white;
+  font-size:16px;
+}
+
+label{
+  font-weight:bold;
+}
+
+.hidden{
+  display:none;
+}
+
+.success{
+  background:#12351d;
+  border:1px solid #2ecc71;
+  padding:18px;
+  border-radius:14px;
+  margin-top:20px;
+}
+
+.openff{
+  background:#20a84b;
+}
+
+.small{
+  color:#bbb;
+  font-size:14px;
+}
+
+.team{
+  padding:14px;
+  background:#20202c;
+  border-radius:12px;
+  margin-top:10px;
 }
 
 footer{
-    background:#111;
-    color:white;
-    text-align:center;
-    padding:15px;
+  text-align:center;
+  padding:25px;
+  color:#aaa;
 }
 </style>
-
 </head>
 
 <body>
 
 <header>
-<h1>📱 Kartik Mobile Tricks</h1>
-<p>Latest Mobile Tips & Tricks</p>
+  <h1>🔥 EK TOURNAMENT</h1>
+  <p>Free Fire Tournament Platform</p>
 </header>
 
+<div class="container">
 
-<div class="card">
-<h2>🚀 Phone Fast Kaise Kare?</h2>
-<p>
-Unused apps delete karo aur storage free rakho.
-</p>
+  <h2 class="title">🏆 EK Battle #1</h2>
+
+  <div class="card">
+
+    <div class="info">
+      <span>🎮 Mode</span>
+      <b>Squad</b>
+    </div>
+
+    <div class="info">
+      <span>👥 Teams</span>
+      <b>2 Teams</b>
+    </div>
+
+    <div class="info">
+      <span>💰 Entry</span>
+      <b>FREE</b>
+    </div>
+
+    <div class="info">
+      <span>🏆 Prize</span>
+      <b>Winner Certificate</b>
+    </div>
+
+    <button onclick="showRegistration()">
+      JOIN TOURNAMENT
+    </button>
+
+  </div>
+
+
+  <!-- REGISTRATION -->
+
+  <div id="registration" class="card hidden">
+
+    <h2>📝 Player Registration</h2>
+
+    <p class="small">
+      Tournament join karne ke liye neeche details bharo.
+    </p>
+
+    <form onsubmit="registerPlayer(event)">
+
+      <label>👤 Player Name</label>
+      <input
+        type="text"
+        id="playerName"
+        placeholder="Apna player name"
+        required
+      >
+
+      <label>🎮 Free Fire UID</label>
+      <input
+        type="number"
+        id="uid"
+        placeholder="Free Fire UID"
+        required
+      >
+
+      <label>👥 Team Name</label>
+      <input
+        type="text"
+        id="teamName"
+        placeholder="Team Alpha / Team Dragon"
+        required
+      >
+
+      <label>📱 WhatsApp / Contact</label>
+      <input
+        type="tel"
+        id="contact"
+        placeholder="WhatsApp number"
+        required
+      >
+
+      <label>📧 Gmail</label>
+      <input
+        type="email"
+        id="gmail"
+        placeholder="example@gmail.com"
+        required
+      >
+
+      <button type="submit">
+        ✅ COMPLETE REGISTRATION
+      </button>
+
+    </form>
+
+  </div>
+
+
+  <!-- SUCCESS -->
+
+  <div id="success" class="success hidden">
+
+    <h2>🎉 Registration Successful!</h2>
+
+    <p id="welcome"></p>
+
+    <p>
+      Ab tournament ke time Free Fire open karke match join kar sakte ho.
+    </p>
+
+    <button class="openff" onclick="openFreeFire()">
+      🎮 OPEN FREE FIRE
+    </button>
+
+    <p class="small">
+      Agar game directly open na ho, to neeche wala option use karo.
+    </p>
+
+    <button onclick="openPlayStore()">
+      📲 OPEN FREE FIRE PAGE
+    </button>
+
+  </div>
+
+
+  <!-- TEAMS -->
+
+  <div class="card">
+
+    <h2>👥 Tournament Teams</h2>
+
+    <div class="team">
+      🥇 <b>Team Alpha</b>
+      <br>
+      <span class="small">Maximum 1 Squad</span>
+    </div>
+
+    <div class="team">
+      🥈 <b>Team Dragon</b>
+      <br>
+      <span class="small">Maximum 1 Squad</span>
+    </div>
+
+  </div>
+
+
+  <!-- LEADERBOARD -->
+
+  <div class="card">
+
+    <h2>📊 Leaderboard</h2>
+
+    <div class="team">
+      🥇 Team Alpha
+      <b style="float:right;">0 PTS</b>
+    </div>
+
+    <div class="team">
+      🥈 Team Dragon
+      <b style="float:right;">0 PTS</b>
+    </div>
+
+  </div>
+
 </div>
-
-
-<div class="card">
-<h2>🔋 Battery Save Trick</h2>
-<p>
-Brightness kam rakho aur Battery Saver mode use karo.
-</p>
-</div>
-
-
-<div class="card">
-<h2>⚡ Internet Speed Improve</h2>
-<p>
-Background me chalne wale apps band karo.
-</p>
-</div>
-
-
-<div class="card">
-<h2>📸 Camera Tips</h2>
-<p>
-Camera settings me HDR aur Grid mode try karo.
-</p>
-</div>
-
-
-<div class="card">
-<h2>💾 Storage Trick</h2>
-<p>
-Duplicate photos aur unwanted files remove karo.
-</p>
-</div>
-
-
-<div class="card">
-<h2>🔥 More Tricks Coming Soon</h2>
-<button>Follow Kartik</button>
-</div>
-
 
 <footer>
-<p>© 2026 Kartik Mobile Tricks</p>
+  © 2026 EK Tournament
 </footer>
 
 
+<script>
+
+function showRegistration(){
+
+  document
+    .getElementById("registration")
+    .classList.remove("hidden");
+
+  document
+    .getElementById("registration")
+    .scrollIntoView({
+      behavior:"smooth"
+    });
+}
+
+
+function registerPlayer(event){
+
+  event.preventDefault();
+
+  const playerName =
+    document.getElementById("playerName").value;
+
+  const uid =
+    document.getElementById("uid").value;
+
+  const teamName =
+    document.getElementById("teamName").value;
+
+  const contact =
+    document.getElementById("contact").value;
+
+  const gmail =
+    document.getElementById("gmail").value;
+
+
+  const playerData = {
+
+    playerName: playerName,
+    uid: uid,
+    teamName: teamName,
+    contact: contact,
+    gmail: gmail,
+    registeredAt: new Date().toISOString()
+
+  };
+
+
+  localStorage.setItem(
+    "ekTournamentPlayer",
+    JSON.stringify(playerData)
+  );
+
+
+  document.getElementById("registration")
+    .classList.add("hidden");
+
+  document.getElementById("success")
+    .classList.remove("hidden");
+
+  document.getElementById("welcome").innerHTML =
+    "Welcome <b>" + playerName +
+    "</b>! Your registration is saved successfully.";
+
+  document.getElementById("success")
+    .scrollIntoView({
+      behavior:"smooth"
+    });
+}
+
+
+/* Try opening Free Fire */
+
+function openFreeFire(){
+
+  const intentUrl =
+    "intent://#Intent;" +
+    "scheme=freefire;" +
+    "package=com.dts.freefireth;" +
+    "end";
+
+  window.location.href = intentUrl;
+
+}
+
+
+/* Safe fallback */
+
+function openPlayStore(){
+
+  window.location.href =
+    "https://play.google.com/store/apps/details?id=com.dts.freefireth";
+
+}
+
+</script>
+
 </body>
 </html>
+
