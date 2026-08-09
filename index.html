@@ -1,4 +1,4 @@
-    
+   
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,171 +8,174 @@
 <title>EK Tournament</title>
 
 <style>
-
 *{
-    box-sizing:border-box;
+  box-sizing:border-box;
 }
 
 body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    background:#08090d;
-    color:white;
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#08090d;
+  color:white;
 }
 
 header{
-    text-align:center;
-    padding:35px 15px;
-    background:linear-gradient(135deg,#ff1b0b,#8b0000);
+  text-align:center;
+  padding:35px 15px;
+  background:linear-gradient(135deg,#ff210e,#850000);
 }
 
 header h1{
-    margin:0;
-    font-size:38px;
-    letter-spacing:2px;
+  margin:0;
+  font-size:38px;
 }
 
 header p{
-    margin-top:10px;
-    color:#eee;
+  color:#eee;
 }
 
 .container{
-    max-width:700px;
-    margin:auto;
-    padding:20px;
+  max-width:700px;
+  margin:auto;
+  padding:20px;
 }
 
 .card{
-    background:#15161e;
-    border:1px solid #292b36;
-    border-radius:18px;
-    padding:20px;
-    margin-bottom:20px;
+  background:#15161e;
+  border:1px solid #292b36;
+  border-radius:18px;
+  padding:20px;
+  margin-bottom:20px;
 }
 
-.card h2{
-    margin-top:0;
-    color:#ff4936;
+h2{
+  color:#ff4936;
 }
 
 .info{
-    display:flex;
-    justify-content:space-between;
-    padding:10px 0;
-    border-bottom:1px solid #292b36;
+  display:flex;
+  justify-content:space-between;
+  padding:10px 0;
+  border-bottom:1px solid #292b36;
 }
 
-.info:last-child{
-    border-bottom:0;
-}
-
-.team{
-    background:#20212b;
-    padding:16px;
-    border-radius:12px;
-    margin:10px 0;
-}
-
-input{
-    width:100%;
-    padding:14px;
-    margin:7px 0 14px;
-    border-radius:10px;
-    border:1px solid #3a3b45;
-    background:#0d0e13;
-    color:white;
-    font-size:16px;
+input,select{
+  width:100%;
+  padding:14px;
+  margin:8px 0 15px;
+  border-radius:10px;
+  border:1px solid #3b3b45;
+  background:#0d0e13;
+  color:white;
+  font-size:16px;
 }
 
 label{
-    font-weight:bold;
+  font-weight:bold;
 }
 
 button{
-    width:100%;
-    padding:15px;
-    margin-top:10px;
-    border:0;
-    border-radius:12px;
-    background:#ff321d;
-    color:white;
-    font-size:17px;
-    font-weight:bold;
-}
-
-button:active{
-    transform:scale(.98);
+  width:100%;
+  padding:15px;
+  margin-top:10px;
+  border:0;
+  border-radius:12px;
+  background:#ff321d;
+  color:white;
+  font-size:17px;
+  font-weight:bold;
 }
 
 .green{
-    background:#18a94b;
+  background:#19a84b;
+}
+
+.blue{
+  background:#246bdb;
 }
 
 .gold{
-    background:#b8860b;
+  background:#b88913;
 }
 
 .hidden{
-    display:none;
+  display:none;
 }
 
 .success{
-    background:#103a20;
-    border:1px solid #2ecc71;
+  background:#10391f;
+  border:1px solid #2ecc71;
+}
+
+.team{
+  background:#20212b;
+  padding:16px;
+  border-radius:12px;
+  margin:10px 0;
+}
+
+.points{
+  float:right;
+  color:#ffd34d;
+  font-weight:bold;
+}
+
+.result{
+  background:#20212b;
+  padding:15px;
+  border-radius:12px;
+  margin-top:10px;
+}
+
+.win{
+  color:#35e875;
+  font-weight:bold;
+}
+
+.loss{
+  color:#ff5555;
+  font-weight:bold;
 }
 
 .certificate{
-    text-align:center;
-    border:2px solid #c9a227;
-    background:linear-gradient(145deg,#111,#211b08);
-    padding:25px;
+  text-align:center;
+  border:2px solid #d0a72c;
+  background:linear-gradient(145deg,#111,#211b08);
 }
 
 .certificate h1{
-    color:#e4bd4f;
-    letter-spacing:2px;
+  color:#e7c253;
 }
 
 .player-name{
-    font-size:30px;
-    font-weight:bold;
-    color:#fff;
-    margin:20px 0;
+  font-size:28px;
+  font-weight:bold;
+  margin:20px 0;
 }
 
 .small{
-    color:#aaa;
-    font-size:13px;
+  color:#aaa;
+  font-size:13px;
 }
 
 footer{
-    text-align:center;
-    padding:25px;
-    color:#777;
+  text-align:center;
+  color:#777;
+  padding:25px;
 }
-
 </style>
 </head>
 
-
 <body>
 
-
 <header>
-
-<h1>🔥 EK TOURNAMENT</h1>
-
-<p>FREE FIRE ESPORTS • PLAY • COMPETE • WIN</p>
-
+  <h1>🔥 EK TOURNAMENT</h1>
+  <p>FREE FIRE • PLAY • COMPETE • WIN</p>
 </header>
-
 
 <div class="container">
 
-
 <!-- TOURNAMENT -->
-
 <div class="card">
 
 <h2>🏆 EK BATTLE #1</h2>
@@ -188,16 +191,6 @@ footer{
 </div>
 
 <div class="info">
-<span>👤 Players</span>
-<b>8 Players</b>
-</div>
-
-<div class="info">
-<span>💰 Entry</span>
-<b>FREE</b>
-</div>
-
-<div class="info">
 <span>🏆 Prize</span>
 <b>Winner Certificate</b>
 </div>
@@ -210,28 +203,24 @@ footer{
 
 
 <!-- TEAMS -->
-
 <div class="card">
 
 <h2>👥 TEAMS</h2>
 
 <div class="team">
-🥇 <b>TEAM ALPHA</b>
-<br>
-<span class="small">4 Players Maximum</span>
+🥇 Team Alpha
+<span class="points">0 PTS</span>
 </div>
 
 <div class="team">
-🥈 <b>TEAM DRAGON</b>
-<br>
-<span class="small">4 Players Maximum</span>
+🥈 Team Dragon
+<span class="points">0 PTS</span>
 </div>
 
 </div>
 
 
 <!-- REGISTRATION -->
-
 <div id="registration" class="card hidden">
 
 <h2>📝 PLAYER REGISTRATION</h2>
@@ -239,7 +228,6 @@ footer{
 <form onsubmit="registerPlayer(event)">
 
 <label>👤 Player Name</label>
-
 <input
 type="text"
 id="playerName"
@@ -247,9 +235,7 @@ placeholder="Enter Player Name"
 required
 >
 
-
 <label>🎮 Free Fire UID</label>
-
 <input
 type="number"
 id="uid"
@@ -257,19 +243,14 @@ placeholder="Enter Free Fire UID"
 required
 >
 
-
 <label>👥 Team Name</label>
-
-<input
-type="text"
-id="teamName"
-placeholder="Enter Team Name"
-required
->
-
+<select id="teamName" required>
+<option value="">Select Team</option>
+<option>Team Alpha</option>
+<option>Team Dragon</option>
+</select>
 
 <label>📱 WhatsApp / Contact</label>
-
 <input
 type="tel"
 id="contact"
@@ -277,9 +258,7 @@ placeholder="Enter WhatsApp Number"
 required
 >
 
-
 <label>📧 Gmail</label>
-
 <input
 type="email"
 id="gmail"
@@ -287,9 +266,8 @@ placeholder="Enter Gmail"
 required
 >
 
-
 <button type="submit">
-✅ COMPLETE REGISTRATION
+✅ REGISTER
 </button>
 
 </form>
@@ -297,63 +275,146 @@ required
 </div>
 
 
-<!-- SUCCESS -->
-
+<!-- REGISTRATION SUCCESS -->
 <div id="success" class="card success hidden">
 
-<h2>🎉 REGISTRATION SUCCESSFUL!</h2>
+<h2>🎉 REGISTRATION SUCCESSFUL</h2>
 
 <p id="welcome"></p>
 
-<p>
-Your tournament registration has been completed.
-</p>
-
-
-<button
-class="green"
-onclick="openFreeFire()">
-
+<button class="green" onclick="openFreeFire()">
 🎮 OPEN FREE FIRE MAX
-
 </button>
 
+<button class="blue" onclick="showResultForm()">
+📊 SUBMIT MATCH RESULT
+</button>
 
-<p class="small">
+</div>
 
-If the game does not open from the browser,
-open Free Fire MAX manually.
 
+<!-- RESULT FORM -->
+<div id="resultForm" class="card hidden">
+
+<h2>📊 SUBMIT MATCH RESULT</h2>
+
+<label>🎮 Game Mode</label>
+
+<select id="gameMode">
+<option>Rank</option>
+<option>Lone Wolf</option>
+<option>Craftland</option>
+<option>Custom</option>
+</select>
+
+<label>🏆 Match Result</label>
+
+<select id="matchResult">
+<option value="WIN">🏆 WIN</option>
+<option value="LOSS">❌ LOSS</option>
+</select>
+
+<label>⭐ Points</label>
+
+<input
+type="number"
+id="matchPoints"
+placeholder="Example: 10"
+min="0"
+required
+>
+
+<button onclick="submitResult()">
+✅ SUBMIT RESULT
+</button>
+
+</div>
+
+
+<!-- PLAYER RESULT -->
+<div id="resultBox" class="card hidden">
+
+<h2>📋 YOUR RESULT</h2>
+
+<div class="result">
+
+<p>
+Player:
+<b id="resultPlayer"></b>
 </p>
+
+<p>
+Mode:
+<b id="resultMode"></b>
+</p>
+
+<p>
+Result:
+<b id="resultStatus"></b>
+</p>
+
+<p>
+Points:
+<b id="resultPoints"></b>
+</p>
+
+</div>
+
+</div>
+
+
+<!-- LEADERBOARD -->
+<div class="card">
+
+<h2>📊 LEADERBOARD</h2>
+
+<div class="team">
+
+🥇 Team Alpha
+
+<span
+class="points"
+id="alphaPoints">
+0 PTS
+</span>
+
+</div>
+
+<div class="team">
+
+🥈 Team Dragon
+
+<span
+class="points"
+id="dragonPoints">
+0 PTS
+</span>
+
+</div>
 
 </div>
 
 
 <!-- CERTIFICATE -->
-
 <div class="card certificate">
 
-<h1>🏆 CERTIFICATE</h1>
+<h1>🏆 WINNER CERTIFICATE</h1>
 
-<p>CERTIFICATE OF ACHIEVEMENT</p>
+<p>Certificate of Achievement</p>
 
 <p>This certificate is proudly presented to</p>
 
-<div class="player-name">
-ENTER KARTIK
+<div
+class="player-name"
+id="certificateName">
+PLAYER NAME
 </div>
 
 <p>
-For participating in
+For outstanding performance in
 </p>
 
 <b>🔥 EK TOURNAMENT</b>
-
-<p>
-and demonstrating excellent gaming spirit.
-</p>
-
-<br>
 
 <p>🏆 WINNER</p>
 
@@ -363,125 +424,98 @@ Keep Playing • Keep Improving • Keep Winning
 
 </div>
 
-
-<!-- LEADERBOARD -->
-
-<div class="card">
-
-<h2>📊 LEADERBOARD</h2>
-
-<div class="team">
-🥇 Team Alpha
-<b style="float:right;">0 PTS</b>
-</div>
-
-<div class="team">
-🥈 Team Dragon
-<b style="float:right;">0 PTS</b>
-</div>
-
-</div>
-
-
 </div>
 
 
 <footer>
-
 © 2026 EK Tournament
-
 </footer>
 
 
 <script>
 
+let currentPlayer = null;
 
-/* REGISTRATION */
+
+/* SHOW REGISTRATION */
 
 function showRegistration(){
 
-    document
-    .getElementById("registration")
-    .classList.remove("hidden");
+  document
+  .getElementById("registration")
+  .classList.remove("hidden");
 
-    document
-    .getElementById("registration")
-    .scrollIntoView({
-        behavior:"smooth"
-    });
-
+  document
+  .getElementById("registration")
+  .scrollIntoView({
+    behavior:"smooth"
+  });
 }
 
 
-/* SUBMIT */
+/* REGISTER */
 
 function registerPlayer(event){
 
-    event.preventDefault();
+  event.preventDefault();
+
+  const player = {
+
+    name:
+    document.getElementById("playerName").value,
+
+    uid:
+    document.getElementById("uid").value,
+
+    team:
+    document.getElementById("teamName").value,
+
+    contact:
+    document.getElementById("contact").value,
+
+    gmail:
+    document.getElementById("gmail").value
+
+  };
 
 
-    let playerName =
-    document.getElementById("playerName").value;
+  currentPlayer = player;
 
-    let uid =
-    document.getElementById("uid").value;
-
-    let teamName =
-    document.getElementById("teamName").value;
-
-    let contact =
-    document.getElementById("contact").value;
-
-    let gmail =
-    document.getElementById("gmail").value;
+  localStorage.setItem(
+    "EK_PLAYER",
+    JSON.stringify(player)
+  );
 
 
-    let data = {
-
-        playerName:playerName,
-
-        uid:uid,
-
-        teamName:teamName,
-
-        contact:contact,
-
-        gmail:gmail,
-
-        registeredAt:new Date().toISOString()
-
-    };
+  document
+  .getElementById("registration")
+  .classList.add("hidden");
 
 
-    localStorage.setItem(
-        "EK_Tournament_Player",
-        JSON.stringify(data)
-    );
+  document
+  .getElementById("success")
+  .classList.remove("hidden");
 
 
-    document
-    .getElementById("registration")
-    .classList.add("hidden");
+  document
+  .getElementById("welcome")
+  .innerHTML =
+  "Welcome <b>" +
+  player.name +
+  "</b>! Your registration is complete.";
 
 
-    document
-    .getElementById("success")
-    .classList.remove("hidden");
+  document
+  .getElementById("certificateName")
+  .innerText =
+  player.name;
 
 
-    document
-    .getElementById("welcome")
-    .innerHTML =
-    "Welcome <b>" +
-    playerName +
-    "</b>! Registration successfully completed.";
-
-
-    document
-    .getElementById("success")
-    .scrollIntoView({
-        behavior:"smooth"
-    });
+  document
+  .getElementById("success")
+  .scrollIntoView({
+    behavior:"smooth"
+  });
 
 }
 
@@ -490,20 +524,169 @@ function registerPlayer(event){
 
 function openFreeFire(){
 
-    const appUrl =
-    "intent://#Intent;" +
-    "scheme=freefire;" +
-    "package=com.dts.freefiremax;" +
-    "end";
-
-
-    window.location.href = appUrl;
+  window.location.href =
+  "intent://#Intent;" +
+  "scheme=freefire;" +
+  "package=com.dts.freefiremax;" +
+  "end";
 
 }
 
 
-</script>
+/* SHOW RESULT FORM */
 
+function showResultForm(){
+
+  document
+  .getElementById("resultForm")
+  .classList.remove("hidden");
+
+  document
+  .getElementById("resultForm")
+  .scrollIntoView({
+    behavior:"smooth"
+  });
+
+}
+
+
+/* SUBMIT RESULT */
+
+function submitResult(){
+
+  if(!currentPlayer){
+
+    const saved =
+    localStorage.getItem("EK_PLAYER");
+
+    if(saved){
+      currentPlayer =
+      JSON.parse(saved);
+    }
+  }
+
+
+  if(!currentPlayer){
+
+    alert("Please register first.");
+
+    return;
+  }
+
+
+  const mode =
+  document.getElementById("gameMode").value;
+
+
+  const result =
+  document.getElementById("matchResult").value;
+
+
+  const points =
+  Number(
+    document.getElementById("matchPoints").value
+  );
+
+
+  const data = {
+
+    player:currentPlayer.name,
+
+    team:currentPlayer.team,
+
+    mode:mode,
+
+    result:result,
+
+    points:points
+
+  };
+
+
+  localStorage.setItem(
+    "EK_RESULT",
+    JSON.stringify(data)
+  );
+
+
+  document
+  .getElementById("resultForm")
+  .classList.add("hidden");
+
+
+  document
+  .getElementById("resultBox")
+  .classList.remove("hidden");
+
+
+  document
+  .getElementById("resultPlayer")
+  .innerText =
+  data.player;
+
+
+  document
+  .getElementById("resultMode")
+  .innerText =
+  data.mode;
+
+
+  const status =
+  document.getElementById("resultStatus");
+
+
+  status.innerText =
+  data.result;
+
+
+  if(data.result === "WIN"){
+
+    status.className = "win";
+
+  }else{
+
+    status.className = "loss";
+
+  }
+
+
+  document
+  .getElementById("resultPoints")
+  .innerText =
+  data.points + " PTS";
+
+
+  /* UPDATE TEAM POINTS */
+
+  if(data.team === "Team Alpha"){
+
+    document
+    .getElementById("alphaPoints")
+    .innerText =
+    data.points + " PTS";
+
+  }
+
+
+  if(data.team === "Team Dragon"){
+
+    document
+    .getElementById("dragonPoints")
+    .innerText =
+    data.points + " PTS";
+
+  }
+
+
+  document
+  .getElementById("resultBox")
+  .scrollIntoView({
+    behavior:"smooth"
+  });
+
+}
+
+</script>
 
 </body>
 </html>
